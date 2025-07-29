@@ -1,0 +1,8 @@
+body {
+    text-align: center;
+}
+img {
+  width: 475px; /* Example size */
+  height: 400px; /* Example size */
+  border-radius: 50%;
+}
