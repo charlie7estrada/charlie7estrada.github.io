@@ -1,12 +1,51 @@
+@media (max-width: 768px) {
+    .skills {
+        grid-template-columns: 1fr;
+    }
+}
+
 body {
     text-align: center;
 }
+
+.summary p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 ul {
     list-style-position: inside;
     list-style-type: square;
     padding-left: 0;
 }
-.lists {
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
+
+.skill-category h3 {
+    border-bottom: 2px solid;
+    display: inline-block;
+    padding-bottom: 2px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.skills li { margin-bottom: 0.5rem; }
+
+.skill-category.tools {
+    grid-column: 1 / -1;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.skills h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 0.5rem;
+}
+
+.education ul {
+    list-style-type: none;
 }
