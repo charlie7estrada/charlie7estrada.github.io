@@ -4,3 +4,22 @@ body {
 img {
     border: 2px solid black;
 }
+
+.tech-list {
+    list-style-type: disc;
+    text-align: left;
+    display: inline-block;
+    margin: 0.5rem 0;
+}
+
+.project__content h4 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.project__links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
