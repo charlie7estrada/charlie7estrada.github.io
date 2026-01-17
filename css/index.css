@@ -6,3 +6,43 @@ img {
   height: 400px; /* Example size */
   border-radius: 50%;
 }
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary {
+    background-color: #4a7c59;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #3d6649;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #4a7c59;
+    border: 2px solid #4a7c59;
+}
+
+.btn-secondary:hover {
+    background-color: #4a7c59;
+    color: white;
+}
