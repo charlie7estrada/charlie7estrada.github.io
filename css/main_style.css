@@ -53,3 +53,13 @@ body {
 .nav__link.active::after {
     width: 100%;
 }
+
+/* mobile responsiveness */
+@media (max-width: 600px) {
+    .nav__list {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        align-items: center;
+    }
+}

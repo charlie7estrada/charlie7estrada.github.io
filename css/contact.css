@@ -35,3 +35,16 @@ body {
     margin-top: 2rem;
     margin-bottom: 0.5rem;
 }
+
+/* mobile responsiveness */
+@media (max-width: 600px) {
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    .codewars img{
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+}

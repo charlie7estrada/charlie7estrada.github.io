@@ -46,3 +46,11 @@ img {
     background-color: #4a7c59;
     color: white;
 }
+
+/* mobile responsiveness */
+@media (max-width: 600px) {
+    img {
+        width: 280px;
+        height: auto;
+    }
+}
