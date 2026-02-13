@@ -65,7 +65,7 @@
                 <li>HTML & CSS</li>
             </ul>
             <div class="project__links">
-                <a href="https://github.com/charlie7estrada/MC_Search_Tool" target="_blank" class="button">View Project</a>
+                <a href="https://github.com/charlie7estrada/MC_Search_Tool" target="_blank" class="button">View Code</a>
                 <a href="https://mc-search-tool.onrender.com/" target="_blank" class="button">Live Demo</a>
             </div>
         </div>
@@ -93,5 +93,15 @@
     </article>
     </main>
 
+    <script>
+    window.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        if (window.scrollY > 0) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+    </script>
 </body>
 </html>
