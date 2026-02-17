@@ -67,6 +67,11 @@ header.scrolled {
     width: 100%;
 }
 
+footer {
+    padding-top: 2rem;
+    text-align: center;
+}
+
 /* mobile responsiveness */
 @media (max-width: 600px) {
     .nav__list {
