@@ -7,6 +7,11 @@ img {
   border-radius: 50%;
 }
 
+.content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .cta-buttons {
     display: flex;
     justify-content: center;
