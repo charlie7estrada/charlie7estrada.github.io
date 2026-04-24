@@ -1,6 +1,7 @@
 body {
     text-align: center;
 }
+
 img {
     border: 2px solid black;
 }
@@ -15,6 +16,11 @@ img {
 .project__content h4 {
     margin-top: 1rem;
     margin-bottom: 0.5rem;
+}
+
+.project__description {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .project__links {
