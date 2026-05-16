@@ -47,3 +47,28 @@ img {
 .button:visited {
     color: #1a2e20;
 }
+
+.project__content--featured {
+    position: relative;
+    background-color: #ddd8ce;
+    border-radius: 8px;
+    padding: 1.5rem;
+    overflow: hidden;
+    border: 2px solid #4a7c59;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project__content--featured::after {
+    content: 'Tech Residency';
+    position: absolute;
+    top: 22px;
+    right: -30px;
+    background-color: #4a7c59;
+    color: white;
+    padding: 4px 40px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    transform: rotate(45deg);
+}
