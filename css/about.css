@@ -15,7 +15,7 @@ body {
 
 ul {
     list-style-position: inside;
-    list-style-type: square;
+    list-style-type: none;
     padding-left: 0;
 }
 
@@ -29,11 +29,18 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
-.skills li { margin-bottom: 0.5rem; }
+.skills li { 
+    margin-bottom: 0.5rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    list-style: none;
+}
 
 .skills h2 {
     grid-column: 1 / -1;
@@ -42,4 +49,14 @@ ul {
 
 .education ul {
     list-style-type: none;
+}
+
+.icon-spacer::before {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1.5px solid currentColor;
 }
