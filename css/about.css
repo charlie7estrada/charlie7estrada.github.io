@@ -4,10 +4,6 @@
     }
 }
 
-body {
-    text-align: center;
-}
-
 .summary p {
     max-width: 800px;
     margin: 0 auto;
