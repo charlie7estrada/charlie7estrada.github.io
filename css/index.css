@@ -33,23 +33,23 @@ img {
 }
 
 .btn-primary {
-    background-color: #4a7c59;
-    color: white;
+    background-color: var(--accent-color);
+    color: var(--btn-text-color);
 }
 
 .btn-primary:hover {
-    background-color: #3d6649;
+    background-color: var(--accent-color-hover);
 }
 
 .btn-secondary {
     background-color: transparent;
-    color: #4a7c59;
-    border: 2px solid #4a7c59;
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
 }
 
 .btn-secondary:hover {
-    background-color: #4a7c59;
-    color: white;
+    background-color: var(--accent-color);
+    color: var(--btn-text-color);
 }
 
 /* mobile responsiveness */

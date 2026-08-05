@@ -16,7 +16,7 @@ img {
 .project__content {
     border-radius: 8px;
     padding: 1.5rem;
-    border: 2px solid #4a7c59;
+    border: 2px solid --accent-color;
     max-width: 800px;
     margin: 0 auto;
     margin-bottom: 2rem;
@@ -50,19 +50,19 @@ img {
 }
 
 .button{
-    color: #4a7c59;
+    color: var(--accent-color);
 }
 
 .button:visited {
-    color: #1a2e20;
+    color: var(--visited-color);
 }
 
 .project__content--featured {
     position: relative;
-    background-color: #ddd8ce;
+    background-color: var(--featured-bg);
     border-radius: 8px;
     padding: 1.5rem;
-    border: 2px solid #4a7c59;
+    border: 2px solid var(--accent-color);
     max-width: 800px;
     margin: 0 auto;
     margin-bottom: 2rem;
