@@ -10,9 +10,11 @@ img {
 }
 
 .project__content {
+    position: relative;
+    background-color: var(--card-bg);
     border-radius: 8px;
     padding: 1.5rem;
-    border: 2px solid --accent-color;
+    border: 2px solid var(--accent-color);
     max-width: 800px;
     margin: 0 auto;
     margin-bottom: 2rem;
@@ -53,22 +55,36 @@ img {
     color: var(--visited-color);
 }
 
-.project__content--featured {
-    position: relative;
-    background-color: var(--featured-bg);
-    border-radius: 8px;
-    padding: 1.5rem;
-    border: 2px solid var(--accent-color);
-    max-width: 800px;
-    margin: 0 auto;
-    margin-bottom: 2rem;
-}
-
 .featured__badge {
     position: absolute;
     top: 12px;
     right: 12px;
-    width: 90px;
+    width: 80px;
     border: none;
     border-radius: 50%;
+}
+
+.in-progress__content {
+    position: relative;
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    border: 2px dashed var(--accent-color);
+    overflow: hidden;
+}
+
+.status-ribbon {
+    position: absolute;
+    top: 14px;
+    right: -32px;
+    background-color: var(--accent-color);
+    color: var(--btn-text-color);
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-align: center;
+    width: 120px;
+    padding: 4px 0;
+    transform: rotate(45deg);
 }

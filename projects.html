@@ -38,12 +38,30 @@
     <main>
     <h1>Projects</h1>
     <article class="projects">
-        <div class="project__content project__content--featured">
+
+        <div class="project__content in-progress__content">
+            <span class="status-ribbon">In Progress</span>
+            <h3 class="project__title">Proposal Tracker</h3>
+            <img src="./images/pt-snippet.png" height="150" width="250"
+                        alt="Proposal Tracker intake form"
+                        class="project__image">
+            <p class="project__description">
+                A collaborative internal tool built with a small team of fellow bootcamp alumni now working together as a freelance collective. 
+                It captures inbound project inquiries, generates branded PDF proposals, and tracks won deals on a kanban board. 
+                Backend is Flask, chosen deliberately over a full Next.js stack so the team's learning time goes toward the frontend instead of splitting focus on a deadline project.</p>
+            <h4>Technologies Used:</h4>
+            <ul class="tech-list">
+                <li>TypeScript & Next.js</li>
+                <li>Python & Flask</li>
+            </ul>
+            <div class="project__links">
+                <a href="https://github.com/charlie7estrada/Proposal-Tracker" target="_blank" class="button" aria-label="View Proposal Tracker source code">View Code</a>
+            </div>
+        </div>
+
+        <div class="project__content">
             <img src="./images/TRbadge.png" alt="Tech Residency badge" class="featured__badge">
             <h3 class="project__title">Field Service Work-Order App - Software Engineering Residency</h3>
-            <img src="./images/placeholder.png" height="150" width="250"
-                        alt="placeholder image"
-                        class="project__image">
             <p class="project__description">
                 As Frontend Lead on a cross-functional team, I helped build a cross-platform mobile app for managing field-service work orders, delivered for an enterprise client during a 10-week residency. 
                 The app replaced paper-based processes with a single in-app workflow: field workers receive, complete, and submit work orders, even with no connection, syncing automatically once they're back online. 
@@ -52,7 +70,6 @@
             <h4>Technologies Used:</h4>
             <ul class="tech-list">
                 <li>TypeScript & React Native + Expo</li>
-                <li>Agile / Scrum</li>
                 <li>Offline-first architecture</li>
                 <li>GPS and Geofencing</li>
             </ul>

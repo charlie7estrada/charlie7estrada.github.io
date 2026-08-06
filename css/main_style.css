@@ -7,7 +7,7 @@
     --btn-text-color: white;
     --shadow-color: rgba(0, 0, 0, 0.3);
     --social-btn-bg: #333;
-    --featured-bg: #ddd8ce;
+    --card-bg: #ddd8ce;
     --visited-color: #1a2e20;
 }
 
@@ -20,7 +20,7 @@
     --btn-text-color: #1a1a1a;
     --shadow-color: rgba(0, 0, 0, 0.6);
     --social-btn-bg: #2a2a2a;
-    --featured-bg: #464037;
+    --card-bg: #464037;
     --visited-color: #a3c9ad;
 }
 
