@@ -5,8 +5,34 @@ img {
 }
 
 .content-wrapper {
+    max-width: 1100px;
+    margin: 0 auto 2rem;
+    padding: 1.5rem 2rem;
+    background-color: var(--card-bg);
+    border-radius: var(--glass-radius);
+    box-shadow: var(--glass-shadow);
+}
+
+.content-wrapper p {
     max-width: 800px;
-    margin: 0 auto;
+    margin-inline: auto;
+}
+
+@supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+    .content-wrapper {
+        background-color: var(--glass-bg);
+        -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+        backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+        border: var(--glass-border);
+    }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+    .content-wrapper {
+        background-color: var(--card-bg);
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
+    }
 }
 
 .cta-buttons {
@@ -54,5 +80,8 @@ img {
     img {
         width: 280px;
         height: auto;
+    }
+    .content-wrapper {
+        padding: 1.25rem 1rem;
     }
 }

@@ -1,12 +1,39 @@
-@media (max-width: 768px) {
-    .skills {
-        grid-template-columns: 1fr;
-    }
-}
-
 .summary p {
     max-width: 800px;
     margin: 0 auto;
+}
+
+/* Section panels */
+.summary,
+.skills,
+.education {
+    max-width: 1100px;
+    margin: 0 auto 2rem;
+    padding: 1.5rem 2rem;
+    background-color: var(--card-bg);
+    border-radius: var(--glass-radius);
+    box-shadow: var(--glass-shadow);
+}
+
+@supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+    .summary,
+    .skills,
+    .education {
+        background-color: var(--glass-bg);
+        -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+        backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+        border: var(--glass-border);
+    }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+    .summary,
+    .skills,
+    .education {
+        background-color: var(--card-bg);
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
+    }
 }
 
 ul {
@@ -25,8 +52,6 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
-    max-width: 1100px;
-    margin: 0 auto;
 }
 
 .skills li { 
@@ -55,4 +80,17 @@ ul {
     border-radius: 50%;
     background-color: transparent;
     border: 1.5px solid currentColor;
+}
+
+@media (max-width: 768px) {
+    .skills {
+        grid-template-columns: 1fr;
+    }
+
+    .summary,
+    .skills,
+    .education {
+        padding: 1.25rem 1rem;
+        margin-bottom: 1.5rem;
+    }
 }

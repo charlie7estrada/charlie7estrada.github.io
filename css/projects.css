@@ -1,5 +1,5 @@
 img {
-    border: 2px solid black;
+    border: var(--glass-border);
 }
 
 .tech-list {
@@ -12,22 +12,33 @@ img {
 .project__content {
     position: relative;
     background-color: var(--card-bg);
-    border-radius: 8px;
+    border-radius: var(--glass-radius);
     padding: 1.5rem;
-    border: 2px solid var(--accent-color);
+    border: var(--glass-border);
     max-width: 800px;
-    margin: 0 auto;
-    margin-bottom: 2rem;
+    margin: 0 auto 2rem;
+    box-shadow: var(--glass-shadow);
+}
+
+@supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+    .project__content {
+        background-color: var(--glass-bg);
+        -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+        backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+    }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+    .project__content {
+        background-color: var(--card-bg);
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
+    }
 }
 
 .project__content h4 {
     margin-top: 1rem;
     margin-bottom: 0.5rem;
-}
-
-.project__description {
-    max-width: 800px;
-    margin: 0 auto;
 }
 
 .project__links {
@@ -65,11 +76,7 @@ img {
 }
 
 .in-progress__content {
-    position: relative;
-    background-color: var(--bg-color);
-    border-radius: 8px;
-    padding: 1.5rem;
-    border: 2px dashed var(--accent-color);
+    box-shadow: var(--glass-shadow), inset 3px 0 0 var(--accent-color);
     overflow: hidden;
 }
 
