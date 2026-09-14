@@ -9,6 +9,8 @@
     --card-bg: #ddd8ce;
     --visited-color: #1a2e20;
     --page-gradient: linear-gradient(160deg, #FBF9F5 0%, #DAD2C2 50%, #EFEAE1 100%);
+    --nav-pill-bg: rgba(74, 124, 89, 0.18);
+    --nav-pill-text: #1a1a1a;
     /* Glass — theme-independent */
     --glass-blur: 10px;
     --glass-saturate: 118%;
@@ -16,7 +18,7 @@
     /* Glass — light theme */
     --glass-bg: rgba(233, 227, 215, 0.72);
     --glass-border: 1px solid rgba(74, 64, 50, 0.16);
-    --glass-shadow: 0 4px 24px rgba(60, 52, 40, 0.10);
+    --glass-shadow: 0 7px 22px rgba(74, 124, 89, 0.30);
 }
 
 [data-theme="dark"] {
@@ -30,10 +32,12 @@
     --card-bg: #464037;
     --visited-color: #a3c9ad;
     --page-gradient: linear-gradient(160deg, #1B1815 0%, #3A342C 50%, #26221D 100%);
+    --nav-pill-bg: rgba(111, 168, 124, 0.22);
+    --nav-pill-text: #f5f3ee;
     /* Glass — dark theme overrides */
     --glass-bg: rgba(58, 51, 43, 0.72);
     --glass-border: 1px solid rgba(235, 232, 226, 0.14);
-    --glass-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
+    --glass-shadow: 0 7px 22px rgba(111, 168, 124, 0.35);
 }
 
 html {
@@ -112,7 +116,6 @@ header.scrolled {
     color: var(--nav-link-color);
     position: relative;
     padding-bottom: 4px;
-    transition: color 0.3s ease;
 }
 
 .nav__link::after {
@@ -126,21 +129,20 @@ header.scrolled {
     transition: width 0.3s ease;
 }
 
-.nav__link:hover {
-    color: var(--accent-color);
-}
-
 .nav__link:hover::after {
     width: 100%;
 }
 
 .nav__link.active {
-    color: var(--accent-color);
-    font-weight: 600;
+    color: var(--nav-pill-text);
+    font-weight: 500;
+    background-color: var(--nav-pill-bg);
+    padding: 4px 14px;
+    border-radius: 999px;
 }
 
 .nav__link.active::after {
-    width: 100%;
+    content: none;
 }
 
 /* dark mode */
