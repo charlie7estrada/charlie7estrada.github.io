@@ -80,6 +80,15 @@ img {
     border-radius: 50%;
 }
 
+@media (max-width: 800px) {
+    .featured__badge {
+        position: static;
+        display: block;
+        width: 56px;
+        margin: 0 auto 0.75rem;
+    }
+}
+
 .in-progress__content {
     box-shadow: var(--glass-shadow), inset 3px 0 0 var(--accent-color);
     overflow: hidden;
