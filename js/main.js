@@ -27,3 +27,29 @@ themeToggle.addEventListener('click', () => {
         localStorage.setItem('theme', 'dark');
     }
 });
+
+// clickable images
+const lightbox = document.getElementById('image-lightbox');
+if (lightbox) {
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxClose = document.getElementById('lightbox-close');
+    let lastScrollY = 0;
+
+    document.querySelectorAll('.project__image').forEach(img => {
+        img.addEventListener('click', () => {
+            lastScrollY = window.scrollY;
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+            lightbox.showModal();
+        });
+    });
+
+    lightboxClose.addEventListener('click', () => lightbox.close());
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) lightbox.close();
+    });
+
+    lightbox.addEventListener('close', () => {
+        window.scrollTo(0, lastScrollY);
+    });
+}

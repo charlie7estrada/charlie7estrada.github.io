@@ -20,6 +20,10 @@ img {
     box-shadow: var(--glass-shadow);
 }
 
+.project__content p {
+    text-align: left;
+}
+
 @supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
     .project__content {
         background-color: var(--glass-bg);
@@ -51,6 +55,7 @@ img {
 .project__image {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .project__image:hover {
@@ -94,4 +99,50 @@ img {
     width: 120px;
     padding: 4px 0;
     transform: rotate(45deg);
+}
+
+dialog#image-lightbox {
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    border: none;
+    border-radius: 8px;
+    padding: 0;
+    background: transparent;
+    max-width: 90vw;
+    max-height: 90vh;
+    overflow: hidden;
+}
+
+dialog#image-lightbox[open] {
+    display: flex;
+}
+
+dialog#image-lightbox::backdrop {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+dialog#image-lightbox img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+#lightbox-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    background: var(--accent-color);
+    color: var(--btn-text-color);
+    font-size: 1.1rem;
+    line-height: 1;
+    cursor: pointer;
 }

@@ -39,59 +39,17 @@
     <h1>Projects</h1>
     <article class="projects">
 
-        <div class="project__content in-progress__content">
-            <span class="status-ribbon">In Progress</span>
-            <h3 class="project__title">Proposal Tracker</h3>
-            <img src="./images/pt-snippet.png" height="150" width="250"
-                        alt="Proposal Tracker intake form"
-                        class="project__image">
-            <p class="project__description">
-                A collaborative internal tool built with a small team of fellow bootcamp alumni now working together as a freelance collective. 
-                It captures inbound project inquiries, generates branded PDF proposals, and tracks won deals on a kanban board. 
-                Backend is Flask, chosen deliberately over a full Next.js stack so the team's learning time goes toward the frontend instead of splitting focus on a deadline project.</p>
-            <h4>Technologies Used:</h4>
-            <ul class="tech-list">
-                <li>TypeScript & Next.js</li>
-                <li>Python & Flask</li>
-            </ul>
-            <div class="project__links">
-                <a href="https://github.com/charlie7estrada/Proposal-Tracker" target="_blank" class="button" aria-label="View Proposal Tracker source code">View Code</a>
-            </div>
-        </div>
-
-        <div class="project__content">
-            <h3 class="project__title">Patient Apt Scheduler</h3>
-            <img src="./images/placeholder.png" height="150" width="250"
-                        alt="placeholder"
-                        class="project__image">
-            <p class="project__description">
-                A full-stack web application that lets patients book appointments with their healthcare providers through an AI-powered chat interface. Instead of filling out a booking form, the patient just talks to the assistant — it collects the date, time, and reason for the visit, then calls a backend tool to actually create the appointment.            </p>
-            <h4>Technologies Used:</h4>
-            <ul class="tech-list">
-                <li>JavaScript & React</li>
-                <li>Python & FastAPI</li>
-                <li>PostgreSQL & SQLAlchemy</li>
-                <li>AI: Mistral API</li>
-            </ul>
-            <div class="project__links">
-                <a href="https://github.com/charlie7estrada/Patient_Apt_Scheduler" target="_blank" class="button" aria-label="View Patient_Apt_Scheduler source code">View Code</a>
-                <a href="https://patient-apt-scheduler.vercel.app" target="_blank" class="button" aria-label="View Patient_Apt_Scheduler live demo">Live Demo</a>
-            </div>
-        </div>
-
         <div class="project__content">
             <img src="./images/TRbadge.png" alt="Tech Residency badge" class="featured__badge">
             <h3 class="project__title">Field Service Work-Order App - Software Engineering Residency</h3>
             <p class="project__description">
-                As Frontend Lead on a cross-functional team, I helped build a cross-platform mobile app for managing field-service work orders, delivered for an enterprise client during a 10-week residency. 
-                The app replaced paper-based processes with a single in-app workflow: field workers receive, complete, and submit work orders, even with no connection, syncing automatically once they're back online. 
-                I also worked on GPS features for distance tracking and geofencing to confirm workers were on-site.
+                As Frontend Lead on a cross-functional team, I helped build a cross-platform mobile app for an enterprise client in the oil and gas industry, replacing a paper-based work-order process with a single in-app workflow. 
+                Field workers could receive, complete, and submit work orders on the go, with offline sync kicking in automatically once they reconnected, and GPS-based geofencing to confirm they were actually on-site. 
+                Over a 10-week engagement, I coordinated with Software Engineering, Data Analytics, Cybersecurity, and QA tracks in Agile sprints under senior engineer mentorship, then presented the finished app to a live audience and handed off a production-ready proof of concept to the client.
             </p>
             <h4>Technologies Used:</h4>
             <ul class="tech-list">
                 <li>TypeScript & React Native + Expo</li>
-                <li>Offline-first architecture</li>
-                <li>GPS and Geofencing</li>
             </ul>
             <div class="project__links">
                 <p><em>Built under NDA for an enterprise client - code and demo are not publicly available.</em></p>
@@ -99,27 +57,30 @@
         </div>
 
         <div class="project__content">
-            <h3 class="project__title">Daily Daisy Planner</h3>
-            <img src="./images/welcome.png" height="150" width="250"
-                        alt="Daily Daisy welcome page"
+            <h3 class="project__title">Patient Apt Scheduler</h3>
+            <img src="./images/patientlogin.png" height="150" width="250"
+                        alt="Patient Apt Scheduler login"
                         class="project__image">
-            <img src="./images/screenshot.png" height="150" width="250"
-                        alt="Daily Daisy Planner screenshot"
+            <img src="./images/patientdemo.png" height="150" width="250"
+                        alt="Patient Apt Scheduler demo dashboard"
                         class="project__image">
             <p class="project__description">
-                I wanted a planner that felt personal, so I built in daily, weekly, and monthly views alongside real-time weather so your layout matches your day.
+                A full-stack scheduling application that lets patients book appointments with their healthcare provider through an AI-powered chat interface. Instead of filling out a form, the patient just talks to the assistant, it collects the date, time, and reason for the visit, then calls a backend tool to actually create the appointment.
+                The assistant is timezone-aware, checks requested times against clinic hours, and confirms with the patient before cancelling anything. Patients log in to track their upcoming appointments on a live-status dashboard.
+                Backed by 40+ automated tests covering booking logic, auth, and double-booking prevention, running through GitHub Actions on every push.
+                Deployed end-to-end: FastAPI on Render, PostgreSQL on Neon, React on Vercel.
             </p>
             <h4>Technologies Used:</h4>
             <ul class="tech-list">
                 <li>JavaScript & React</li>
-                <li>Python & Flask</li>
-                <li>SQLite & SQLAlchemy</li>
-                <li>JWT Authentication</li>
-                <li>OpenWeather API</li>
+                <li>Python & FastAPI</li>
+                <li>PostgreSQL & SQLAlchemy</li>
+                <li>AI: Mistral API</li>
+                <li>Pytest & GitHub Actions</li>
             </ul>
             <div class="project__links">
-                <a href="https://github.com/charlie7estrada/Daily_Daisy_Planner" target="_blank" class="button" aria-label="View Daily Daisy Planner source code">View Code</a>
-                <a href="https://dailydaisyplanner.vercel.app" target="_blank" class="button" aria-label="View Daily Daisy Planner live demo">Live Demo</a>
+                <a href="https://github.com/charlie7estrada/Patient_Apt_Scheduler" target="_blank" class="button" aria-label="View Patient_Apt_Scheduler source code">View Code</a>
+                <a href="https://patient-apt-scheduler.vercel.app" target="_blank" class="button" aria-label="View Patient_Apt_Scheduler live demo">Live Demo</a>
             </div>
         </div>
 
@@ -129,8 +90,8 @@
                         alt="search tool screenshot"
                         class="project__image">
             <p class="project__description">
-                In healthcare customer service, every second spent hunting for a member's record is a second not spent helping them. 
-                I built this tool to eliminate that friction and allow CS teams a fast, unified way to find members across multiple client organizations without jumping between systems.
+                In healthcare customer service, every second spent hunting for a member's record is a second not spent helping them, I ran into that exact friction daily while working in healthcare claims management, so I built this on my own time to fix it.
+                It gives CS teams a fast, unified way to find members across multiple client organizations without jumping between systems.
             </p>
             <h4>Technologies Used:</h4>
             <ul class="tech-list">
@@ -145,19 +106,64 @@
         </div>
 
         <div class="project__content">
+            <h3 class="project__title">Proposal Tracker</h3>
+            <img src="./images/pt-snippet.png" height="150" width="250"
+                        alt="Proposal Tracker intake form"
+                        class="project__image">
+            <p class="project__description">
+                A collaborative internal tool built with a small team of fellow bootcamp alumni now working together as a freelance collective called DevSphereLabs. 
+                It captures inbound project inquiries, generates branded PDF proposals, and tracks won deals on a kanban board. 
+                Backend is Flask, chosen deliberately over a full Next.js stack so the team's learning time goes toward the frontend instead of splitting focus on a deadline project.
+            </p>
+            <h4>Technologies Used:</h4>
+            <ul class="tech-list">
+                <li>TypeScript & Next.js</li>
+                <li>Python & Flask</li>
+            </ul>
+            <div class="project__links">
+                <a href="https://github.com/charlie7estrada/Proposal-Tracker" target="_blank" class="button" aria-label="View Proposal Tracker source code">View Code</a>
+            </div>
+        </div>
+
+        <div class="project__content">
+            <h3 class="project__title">Daily Daisy Planner</h3>
+            <img src="./images/welcome.png" height="150" width="250"
+                        alt="Daily Daisy welcome page"
+                        class="project__image">
+            <img src="./images/screenshot.png" height="150" width="250"
+                        alt="Daily Daisy Planner screenshot"
+                        class="project__image">
+            <p class="project__description">
+                I wanted a planner that felt personal, so I built daily, weekly, and monthly views with persistent user authentication, letting each user pick up their planner right where they left off.
+                Current weather displays alongside the planner based on the user's location, so your day-at-a-glance actually reflects the day outside.
+                Deployed end-to-end: Flask on Render, React on Vercel.            </p>
+            <h4>Technologies Used:</h4>
+            <ul class="tech-list">
+                <li>JavaScript & React</li>
+                <li>Python & Flask</li>
+                <li>SQLite & SQLAlchemy</li>
+                <li>OpenWeather API</li>
+            </ul>
+            <div class="project__links">
+                <a href="https://github.com/charlie7estrada/Daily_Daisy_Planner" target="_blank" class="button" aria-label="View Daily Daisy Planner source code">View Code</a>
+                <a href="https://dailydaisyplanner.vercel.app" target="_blank" class="button" aria-label="View Daily Daisy Planner live demo">Live Demo</a>
+            </div>
+        </div>
+
+        <div class="project__content">
             <h3 class="project__title">Mechanic Shop API</h3>
             <img src="./images/mechanic-erd.png" height="150" width="250"
                         alt="Mechanic Shop ERD diagram"
                         class="project__image">
             <p class="project__description">
-                A RESTful API for managing automotive repair shop operations including customers, mechanics, vehicles, and services tickets. 
-                Features a normalized PostgreSQL database, comprehensive CRUD operations, and automated testing with CI/CD pipeline.
+                A backend-focused project I built to get real practice with production-grade API architecture, a RESTful API for managing automotive repair shop operations: customers, mechanics, vehicles, and service tickets.
+                Backed by a normalized PostgreSQL database, with a full Pytest suite running automatically through GitHub Actions on every push, and a Postman collection documenting every endpoint for anyone testing or integrating with the API.
             </p>
             <h4>Technologies Used:</h4>
             <ul class="tech-list">
                 <li>Python & Flask</li>
                 <li>PostgreSQL & SQLAlchemy</li>
-                <li>React Frontend</li>
+                <li>JavaScript & React</li>
                 <li>Pytest & GitHub Actions</li>
             </ul>
             <div class="project__links">
@@ -171,6 +177,11 @@
     <footer>
     <p>&copy; <span id="year">2026</span> Charlie Estrada. Built with HTML, CSS & JavaScript.</p>
     </footer>
+
+    <dialog id="image-lightbox" aria-label="Expanded image view">
+    <button id="lightbox-close" aria-label="Close image">&times;</button>
+    <img id="lightbox-img" alt="">
+    </dialog>
 
     <script src="js/main.js"></script>
 
