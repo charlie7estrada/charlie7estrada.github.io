@@ -53,3 +53,23 @@ if (lightbox) {
         window.scrollTo(0, lastScrollY);
     });
 }
+
+// copy email to clipboard
+const copyEmailBtn = document.getElementById('copy-email');
+if (copyEmailBtn) {
+    const copyStatus = document.getElementById('copy-status');
+    let copyTimeout;
+
+    copyEmailBtn.addEventListener('click', async () => {
+        try {
+            await navigator.clipboard.writeText(copyEmailBtn.dataset.email);
+            copyStatus.textContent = 'Copied!';
+        } catch {
+            copyStatus.textContent = "Couldn't copy";
+        }
+        clearTimeout(copyTimeout);
+        copyTimeout = setTimeout(() => {
+            copyStatus.textContent = '';
+        }, 2000);
+    });
+}

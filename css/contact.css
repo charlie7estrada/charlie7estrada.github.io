@@ -32,6 +32,51 @@
     margin-bottom: 0.5rem;
 }
 
+.email-copy {
+    position: relative;
+    width: fit-content;
+    margin: 1rem auto;
+}
+
+.email-copy__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem 0.875rem;
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: var(--glass-border);
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.email-copy__btn:hover {
+    background-color: var(--nav-pill-bg);
+}
+
+.email-copy__btn:focus-visible {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+.email-copy__icon {
+    flex-shrink: 0;
+    color: var(--accent-color);
+}
+
+.email-copy__status {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-left: 0.5rem;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
 .contact-panel {
     max-width: 800px;
     margin: 0 auto 2rem;
